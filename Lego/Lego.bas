@@ -167,7 +167,7 @@ If Trim(Numero) <> "" Then 'If set exists
                             If Not Rng Is Nothing Then 'if yes
                                 Application.Goto Rng, True
                                 Sheets(Nom).Select
-                                x = InputBox("Combien d'exemplaires de ce set souhaitez vous ajouter ?", "Import")
+                                x = InputBox("How many copies of this set would you like to add ?", "Import")
                                 For i = 1 To x
                                     For y = 2 To 500
                                         If IsEmpty(Sheets(Nom).Cells(y, 1)) = False Then
